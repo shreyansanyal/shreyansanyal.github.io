@@ -25,6 +25,7 @@ header {
 .logo img {
     max-width: 100px; /* Adjust the maximum width of the logo */
     border-radius: 50%; /* Make the logo rounded */
+    object-fit: cover;
 }
 
 .header-links {
