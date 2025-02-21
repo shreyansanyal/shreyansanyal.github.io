@@ -7,7 +7,7 @@ function typeWriter() {
   if (i < typewriterText.length) {
     typewriterElement.innerHTML += typewriterText.charAt(i);
     i++;
-    setTimeout(typeWriter, 300);
+    setTimeout(typeWriter, 260);
   }
 }
 
