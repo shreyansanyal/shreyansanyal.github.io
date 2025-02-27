@@ -194,9 +194,10 @@ body {
   }
   
   /* Responsive Design */
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .bio h1 {
       font-size: 2rem;
+      padding-top: 60px;
     }
   
     .bio .tagline {
@@ -205,8 +206,9 @@ body {
   
     .bio .description {
       font-size: 0.9rem;
+      padding-top: 60px;
     }
-  
+
     .resume-button {
       font-size: 0.8rem;
       padding: 8px 12px;
