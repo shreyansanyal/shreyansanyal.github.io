@@ -2,15 +2,20 @@
 layout: default
 ---
 
-<article class="post">
+<article class="post-page">
     {% if page.cover %}
-    <div class="cover-container">
+    <div class="post-cover">
         <img src="{{ page.cover }}" alt="Cover image" class="cover">
     </div>
     {% endif %}
-    <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date: "%B %-d, %Y" }}</p>
-    <div class="content">
-        {{ content }}
+    <div class="post-page-content">
+        <h1 class="post-page-title">{{ page.title }}</h1>
+        <p class="post-page-date">{{ page.date | date: "%B %-d, %Y" }}</p>
+        <div class="post-page-body">
+            {{ content }}
+        </div>
+        <div class="back-to-blog">
+            <a href="/blog/">← Back to Blog</a>
+        </div>
     </div>
 </article>
