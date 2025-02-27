@@ -1,4 +1,6 @@
 /* General Styles */
+@import "dark-theme";
+
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;

@@ -1,0 +1,231 @@
+/* General Styles */
+@import "dark-theme.scss";
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #242323;
+    color: #ffffff;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Particle Background */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1a1a1a;
+    z-index: 0;
+  }
+  
+  /* Top Right Buttons */
+  .top-right-buttons {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+  }
+  
+  .contact-button, .blog-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #0f9f95;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-button:hover, .blog-button:hover {
+    background-color: #0f9f95;
+    transform: translateY(-3px);
+  }
+  
+  /* Bio Section */
+  .bio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .bio .tagline {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-bottom: 20px;
+  }
+  
+  .bio .description {
+    font-size: 1rem;
+    color: #aaaaaa;
+    margin-bottom: 30px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #0f9f95;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .resume-button:hover {
+    background-color: #0f9f95;
+    transform: translateY(-5px);
+  }
+  
+  /* Skills Section */
+  .skills {
+    margin-top: 30px;
+  }
+  
+  .skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .skill {
+    font-size: 1rem;
+    color: #aaaaaa;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .skill:hover {
+    color: #ffffff;
+    background-color: #0f9f95;
+  }
+  
+  /* Social Media Links */
+  .social-links {
+    margin-top: 50px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #aaaaaa;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icon img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
+  }
+  
+  .social-icon span {
+    font-size: 0.9rem;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .fade-in:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  
+  .fade-in:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  .fade-in:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .bio h1 {
+      font-size: 2rem;
+    }
+  
+    .bio .tagline {
+      font-size: 1rem;
+    }
+  
+    .bio .description {
+      font-size: 0.9rem;
+    }
+  
+    .resume-button {
+      font-size: 0.8rem;
+      padding: 8px 12px;
+    }
+  
+    .skill {
+      font-size: 0.8rem;
+      padding: 8px 12px;
+    }
+  
+    .social-icon img {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .social-icon span {
+      font-size: 1.2rem;
+    }
+  }
+
+  .cover {
+    width: 100%; /* Make the image fill the container width */
+    height: 200px; /* Set a fixed height for the strip */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    margin-bottom: 20px; /* Add spacing below the image */
+}
+
+/* Responsive adjustments for smaller devices */

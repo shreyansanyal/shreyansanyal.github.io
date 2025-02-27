@@ -1,0 +1,56 @@
+/* Dark theme styles */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: #bb86fc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #11b490;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+}
+
+.post {
+    background-color: #1e1e1e;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.post img.cover {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.meta {
+    color: #bb86fc;
+    font-style: italic;
+}
+
+Copy
+
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-list .post {
+    margin-bottom: 40px;
+}
+
+.post-list .cover {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}

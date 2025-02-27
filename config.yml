@@ -1,0 +1,9 @@
+title: My Name
+description: A blog about things I love.
+baseurl: "" # Leave this empty if your site is at the root of the domain
+url: "https://shreyansanyal.github.io" # Replace with your GitHub Pages URL
+theme: minima
+
+sass:
+  sass_dir: assets/css
+  style: compressed
